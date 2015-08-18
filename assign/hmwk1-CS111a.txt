@@ -1,0 +1,46 @@
+// Homework #1 is to write two algorithms
+// a) using sequential list of steps
+// b) using stepwise refinement
+// Written by:  Richard Tzeng
+// Last Date Modified:  01/16/2015
+//
+
+
+a) Make a cup of tea
+1. boil water
+2. get cup
+3. open tea bag
+4. place tea bag in cup
+5. pour water in cup
+6. drink
+
+
+b) Make a cup of tea
+1. boil water
+    1.1 get pot
+    1.2 fill pot with water
+        1.2.1 turn on water faucet
+        1.2.2 place pot under faucet
+        1.2.3 fill to about 2 cups water
+        1.2.4 turn off water faucet
+        1.2.5 place pot on counter
+    1.3 turn on stove
+    1.4 place pot on stove 
+2. get cup
+3. open tea bag
+    3.1 lift packet
+    3.2 tear off opening
+        3.2.1 place right hand on top of packet
+        3.2.2 place left hand on middle of packet
+        3.2.3 separate hands in tearing motion
+            3.2.3.1 move right hand forward away from body
+            3.2.3.2 move left hand back towards body
+            3.2.3.3 proceed until paper and bag are separated
+        3.2.4 place bag on counter
+    3.3 discard outer cover
+4. place tea bag in cup
+5. pour water in cup
+    5.1 lift pot from stove
+    5.2 pour water into cup
+    5.3 place pot back onto stoves
+6. drink

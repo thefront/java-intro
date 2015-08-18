@@ -1,0 +1,110 @@
+Script started on Tue 27 Jan 2015 10:15:02 PM PST
+[rtzeng@hills 2hmwk]$ date
+Tue Jan 27 22:15:11 PST 2015
+[rtzeng@hills 2hmwk]$ echo Richard Tzeng
+Richard Tzeng
+[rtzeng@hills 2hmwk]$ cat Haiku.java
+//**********************************************************************
+// Haiku.java  This program prints out a Haiku using 2 print statements
+// inputs : none
+// outputs : a haiku poem
+// Written by : Richard Tzeng
+// Last Modified : Jan 22 2015
+//**********************************************************************
+
+public class Haiku {
+  public static void main (String[] args)  {
+    // 2 print statements for the first line
+    System.out.print("Lightning ");
+    System.out.println("flash");
+
+    // 2nd and 3rd lines using 1 print statement
+    System.out.println("A frog jumps into the pond\n" + "Poem data flows");
+  }
+}
+[rtzeng@hills 2hmwk]$ 
+[rtzeng@hills 2hmwk]$ java Haiku
+Lightning flash
+A frog jumps into the pond
+Poem data flows
+[rtzeng@hills 2hmwk]$ 
+[rtzeng@hills 2hmwk]$ cat Stepwise.java
+//**********************************************************************
+// Stepwise.java  This program prints out our algorithm from hmwk#1
+//                only one print statement.
+// inputs : none
+// outputs : stepwise algorithm
+// Written by : Richard Tzeng
+// Last Modified : Jan 22 2015
+//**********************************************************************
+
+public class Stepwise {
+  public static void main (String[] args)  {
+    // print the stepwise algorithm 
+    System.out.println("Algorithm to make a cup of tea\n" +
+                       "1. boil water\n" + 
+                       "\t1.1 get pot\n" +
+                       "\t1.2 fill pot with water\n" +
+                       "\t\t1.2.1 turn on water faucet\n" +
+                       "\t\t1.2.2 place pot under faucet\n" +
+                       "\t\t1.2.3 fill to about 2 cups water\n" +
+                       "\t\t1.2.4 turn off water faucet\n" +
+                       "\t\t1.2.5 place pot on counter\n" +
+                       "\t1.3 turn on stove\n" +
+                       "\t1.4 place pot on stove\n" +
+                       "2. get cup\n" +
+                       "3. open tea bag\n" +
+                       "\t3.1 lift packet\n" +
+                       "\t3.2 tear off opening\n" +
+                       "\t\t3.2.1 place right hand on top of packet\n" +
+                       "\t\t3.2.2 place left hand on middle of packet\n" +
+                       "\t\t3.2.3 separate hands in tearing motion\n" +
+                       "\t\t\t3.2.3.1 move right hand forward away from body\n" +
+                       "\t\t\t3.2.3.2 move left hand back towards body\n" +
+                       "\t\t\t3.2.3.3 proceed until paper and bag are separated\n" +
+                       "\t\t3.2.4 place bag on counter\n" +
+                       "\t3.3 discard outer cover\n" +
+                       "4. place tea bag in cup\n" +
+                       "5. pour water in cup\n" +
+                       "\t5.1 lift pot from stove\n" +
+                       "\t5.2 pour water into cup\n" +
+                       "\t5.3 place pot back onto stoves\n" +
+                       "6. drink");
+  }
+}
+[rtzeng@hills 2hmwk]$ 
+[rtzeng@hills 2hmwk]$ ca  java Stepwise
+Algorithm to make a cup of tea
+1. boil water
+	1.1 get pot
+	1.2 fill pot with water
+		1.2.1 turn on water faucet
+		1.2.2 place pot under faucet
+		1.2.3 fill to about 2 cups water
+		1.2.4 turn off water faucet
+		1.2.5 place pot on counter
+	1.3 turn on stove
+	1.4 place pot on stove
+2. get cup
+3. open tea bag
+	3.1 lift packet
+	3.2 tear off opening
+		3.2.1 place right hand on top of packet
+		3.2.2 place left hand on middle of packet
+		3.2.3 separate hands in tearing motion
+			3.2.3.1 move right hand forward away from body
+			3.2.3.2 move left hand back towards body
+			3.2.3.3 proceed until paper and bag are separated
+		3.2.4 place bag on counter
+	3.3 discard outer cover
+4. place tea bag in cup
+5. pour water in cup
+	5.1 lift pot from stove
+	5.2 pour water into cup
+	5.3 place pot back onto stoves
+6. drink
+[rtzeng@hills 2hmwk]$ 
+[rtzeng@hills 2hmwk]$ exit
+exit
+
+Script done on Tue 27 Jan 2015 10:15:59 PM PST

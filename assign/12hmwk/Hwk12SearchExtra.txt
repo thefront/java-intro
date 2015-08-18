@@ -1,0 +1,147 @@
+Script started on Mon May 18 00:46:16 2015
+[?1034hbash-3.2$ 
+bash-3.2$ cat Hwk12SearchExtra.java
+// This program inputs 5 numbers each is between 10 and 100.
+// As each number is read, it stores it in an array only if it is not a 
+// duplicate of a number already read. The most number of values is where all 5
+// values are unique. Print out the unique values.
+//
+// For example if the user enters: 10 30 30 20 10, the output would be: 10 30 20
+//
+// Inputs: 5 values
+//
+// Outputs: the unique values entered.
+//
+// Written by: Richard Tzeng
+// Last Dat Modified:  5/18/2015
+
+import java.util.Scanner;
+
+public class Hwk12SearchExtra
+{
+  public static void main(String[] args)
+  {
+    final int SIZE = 5;                     // constant // of input values
+    int[] numbers = new int[SIZE];          // init array
+
+    // pass the array to the getValues method.
+    getValues(numbers);
+
+    System.out.println("Here are the numbers that you entered:");
+
+    // Pass the array to the showArray method.
+    showArray(numbers);
+  }
+
+  /**
+      The getValues method accepts a reference to an array as its argument.
+      The user is asked to enter a value for each element. Only unique values
+      are kept in the array, the rest are value 0.
+      @param array A reference to the array.
+  */
+  private static void getValues(int[] array)
+  {
+    // create a Scanner objects for keyboard input.
+    Scanner keyboard = new Scanner(System.in);
+
+    System.out.println("Enter a series of " + array.length + 
+                       " numbers between 10 and 100.");
+
+    // read values into the array
+    for (int index = 0; index < array.length; index++)
+    {
+      int value;    // var for input
+      System.out.print("Enter number " + (index + 1) + ": ");
+      value = keyboard.nextInt();
+      
+      if (value >= 10 && value <= 100)      // check values are between 10 & 100
+      {
+        boolean found = false;              // set duplicate boolean to false
+
+        if (index == 0)                     // if index is 0 just assign value
+        {
+          array[index] = value;
+        }
+        else
+        {
+          // for index 2, set search to value
+          int searchValue = value;
+
+          // loop backwards to check values from previous inputs
+          for (int i = (index - 1); i >= 0; i--)
+          {
+            if (searchValue == array[i])
+            {
+              // if there is a duplicate, then set found variable to true
+              found = true;
+
+              // stop the for loop and proceed
+              break;
+            }
+          }
+        }
+
+        // if no duplicate is found (false), then add value to array at index 
+        if (found == false)
+        {
+          array[index] = value;
+        }
+      }
+      else
+      {
+        // print error
+        System.out.println("Number not between 10 and 100. Run program again!");
+        System.exit(1);
+      }
+    }
+  }
+
+  /**
+    The showArray method accepts an array as an argument and displays it's contents
+    @param array A reference to the array
+  */
+  public static void showArray(int[] array)
+  {
+    int searchValue; // init var for search value
+
+    // Display the array elements.
+    for (int index = 0; index < array.length; index++)
+    {
+      // exclude the partially filled elements
+      if (array[index] > 0)
+      {
+        System.out.print(array[index] + " ");
+      }
+    }
+
+    System.out.println();
+
+  }
+}
+bash-3.2$ 
+bash-3.2$ javac Hwk12SearchExtra.java
+bash-3.2$ 
+bash-3.2$ java Hwk12SearchExtra.[K
+Enter a series of 5 numbers between 10 and 100.
+Enter number 1: 10
+Enter number 2: 30
+Enter number 3: 30
+Enter number 4: 20
+Enter number 5: 10
+Here are the numbers that you entered:
+10 30 20 
+bash-3.2$ 
+bash-3.2$ java Hwk12SearchExtra
+Enter a series of 5 numbers between 10 and 100.
+Enter number 1: 10
+Enter number 2: 20
+Enter number 3: 30
+Enter number 4: 40
+Enter number 5: 50
+Here are the numbers that you entered:
+10 20 30 40 50 
+bash-3.2$ 
+bash-3.2$ exit
+exit
+
+Script done on Mon May 18 00:47:17 2015
