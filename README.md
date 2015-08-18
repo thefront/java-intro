@@ -1,3 +1,2 @@
-# javaCS111A
-Examples and Assign for CS111A
-Test to see if README is updated
+# Introduction to Java course
+Examples and Assign for intro to Java course
